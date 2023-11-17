@@ -1,5 +1,5 @@
 import React from 'react';
-import {View,StyleSheet, Image} from 'react-native';
+import {View,StyleSheet, Image, Platform} from 'react-native';
 import StyledText from './StyledText.jsx';
 import ActorStats from './ActorStats.jsx';
 import theme from '../theme.js';
@@ -40,7 +40,12 @@ const styles = StyleSheet.create({
     movie:{
         padding:4,
         color:theme.colors.white,
-        backgroundColor:theme.colors.primary,
+        //Para trabajar con diferentes plataformas
+        backgroundColor: Platform.select({
+            android:theme.colors.primary,
+            ios: 'orange',
+            default: 'purple',
+        }),
         alignSelf:'flex-start',
         borderRadius:5,
         overflow:'hidden'
