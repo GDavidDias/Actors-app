@@ -4,6 +4,7 @@ import StyledText from './StyledText.jsx';
 import ActorStats from './ActorStats.jsx';
 import theme from '../theme.js';
 
+//FUNCION que muestra la CARD de Actores
 const ActorHeader = ({first_name,last_name,image,movies}) => (
     <View style={{flexDirection:'row', paddingBottom:2}}>
         <View style={{paddingRight:10}}>

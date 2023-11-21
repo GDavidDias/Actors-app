@@ -22,6 +22,7 @@ const styles = StyleSheet.create({
     }
 })
 
+//Patron Formik para los inputs
 const FormikInputValue = ({name,...props})=>{
     const[field,meta,helpers] = useField(name)
     return(
@@ -37,6 +38,7 @@ const FormikInputValue = ({name,...props})=>{
     )
 }
 
+//FUNCION PRINCIPAL
 export default function LogInPage(){
     return (
     <Formik validationSchema={loginValidationSchema} initialValues={initialValues} onSubmit={values=>console.log(values)}>

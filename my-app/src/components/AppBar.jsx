@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
     }
 })
 
+
 const AppBarTab = ({children,to})=>{
     const {pathname} = useLocation()
     const active = pathname===to
@@ -42,6 +43,7 @@ const AppBarTab = ({children,to})=>{
     )
 };
 
+//FUNCION PRINCIPAL APPBAR
 const AppBar = () => {
   return (
     <View style={styles.container}>
