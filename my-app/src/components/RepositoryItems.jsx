@@ -30,7 +30,11 @@ const styles = StyleSheet.create({
         padding:20, 
         paddingBottom: 5, 
         paddingTop:5,
-        
+        backgroundColor:'#fff2cc',
+        marginBottom:10,
+        borderColor:'#d3bfd9',
+        borderStyle:'solid',
+        borderWidth:2,
     },
     title:{
         color:'#09f',
